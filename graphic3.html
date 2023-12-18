@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+<head>SVG Animation</head>
+<title>Animation</title>
+
+<body>
+<nav style='background-color:pink; text-align:center; font-weight:bold; font-size:150%;'>
+<a href='advHTMLnCSS.html'>AdvHTMLnCSS</a> &nbsp &nbsp
+<a href='Graphics.html'>Graphics</a> &nbsp &nbsp
+<a href='graphics2.html'>graphics2</a> &nbsp &nbsp
+<a href='graphic3.html'>graphic3</a> &nbsp &nbsp
+<a href='ShakeCSS.html'>shake</a> &nbsp &nbsp
+</nav>
+<h1>Animation</h1>
+
+<h3>Circle</h3>
+<p>Move the circle</p>
+<svg>
+<g>
+<circle cx='100' cy='100' r='50' fill='cyan' stroke='black' stroke-width='3'/>
+</circle>
+<animateMotion path='M 0 0 V 0 H 200 Z' dur='1s'
+repeatCount = '5'/>
+</g>
+<g>
+<circle cx='100' cy='100' r='30' fill='green' stroke='black' stroke-width='3'
+/>
+</circle>
+<animateMotion path='M 0 0 V 10 H 100 Z' dur='2s'
+repeatCount = '10'/>
+</g>
+</svg>
+<h2>Moving shape in square path</h2>
+<svg width='400' height='300'>
+<g>
+<rect x='50' y='30' width='100' height='75' fill='red' stroke='black' stroke-width='3'/>
+<animateMotion path='M 10 10 H 330 V 200 H 200 Z' dur='3s' repeatCount= '2'/>
+</g>
+</svg>
+<h3>Solar System</h3>
+<p>Its da solar system</p>
+<svg width='10000' height='10000'>
+<circle cx='250' cy='250' r='50' fill='yellow' stroke='black' stroke-width='3'/>
+</circle>
+<g>
+<circle cx='190' cy='190' r='10' fill='grey' stroke='black' stroke-width='2'/> <animateMotion path='M 10 10 H -330 V 200 H 200 Z' dur='5s'
+repeatCount = '5'/>
+</g>
+<g>
+<circle cx='160' cy='160' r='20' fill='orange' stroke='black' stroke-width='2'/>
+<animateMotion path='M 10 10 H -330 V 200 H 200 Z' dur='5s'
+repeatCount = '5'/>
+</g>
+<g>
+<circle cx='110' cy='110' r='22' fill='blue' stroke='black' stroke-width='2'/>
+<animateMotion path='M 10 10 H -330 V 200 H 200 Z' dur='5s'
+repeatCount = '5'/>
+</g>
+<g>
+<circle cx='60' cy='60' r='13' fill='red' stroke='black' stroke-width='2'/>
+<animateMotion path='M 10 10 H -330 V 200 H 200 Z' dur='5s'
+repeatCount = '5'/>
+</g>
+</svg>
